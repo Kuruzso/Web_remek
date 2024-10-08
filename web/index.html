@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="hu">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Epheremal Courage</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="sidebar">
+        <ul>
+            <li><a aria-disabled="false" href="#">Letöltés</a></li>
+            <li><a href="#">Játékról</a></li>
+            <li><a href="#">Rólunk</a></li>
+            <li><a href="#">Segítség</a></li>
+            <li><a href="#">Tutorial</a></li>
+            <li><a href="#">Közösség</a></li>
+        </ul>
+    </div>
+    <img src="img/logo.png" alt="Ephemeral Courage" class="centered-image">
+
+    <div class="container">
+        <h1>Üdvözlünk a Szép Háttérkép Oldalon!</h1>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum porta erat est, non pulvinar orci tincidunt eu. Quisque id sem convallis, elementum est nec, rutrum sem. Nunc id dolor nulla. Mauris magna justo, bibendum ut suscipit at, auctor ut neque. Proin felis velit, aliquet euismod est ac, aliquam sagittis dui. Suspendisse nibh eros, iaculis quis leo nec, fringilla aliquet sapien. Aliquam nec mauris molestie, laoreet urna at, rutrum arcu. Curabitur dictum ornare elit. Donec mollis eleifend libero ac volutpat. Duis non magna facilisis, lacinia leo ac, efficitur augue.
+
+            Interdum et malesuada fames ac ante ipsum primis in faucibus. Sed lacinia eget ex ac sodales. Cras et metus rhoncus erat luctus semper. Etiam vestibulum faucibus justo. Praesent euismod velit non diam blandit lobortis. Donec fringilla tortor nec odio interdum, sit amet rhoncus felis efficitur. Ut vel magna mi. Maecenas elementum ut est quis luctus. Sed lacinia malesuada tincidunt.
+            
+            Fusce iaculis felis vitae pellentesque viverra. Morbi placerat nisi quis facilisis mattis. Sed sodales, lorem eget placerat vehicula, justo nisi eleifend quam, eu venenatis purus elit non urna. In euismod elit id quam placerat ullamcorper. Sed turpis lacus, faucibus a aliquet vitae, pellentesque in felis. Donec ex orci, sollicitudin sed augue eu, laoreet consequat ex. Nulla facilisi. In facilisis felis eros, sit amet lacinia turpis feugiat eget. Suspendisse vitae mi consectetur tellus tincidunt semper. Nulla facilisi. Nullam condimentum ipsum eget porta bibendum.
+        </p>
+    </div>
+    
+    <a href="https://mail.google.com/mail/?view=cm&fs=1&to=vellera@kkszki.hu&su=Tárgy szövege&body=" target="_blank">
+        <img src="https://www.svgrepo.com/show/192522/customer-service-support.svg" alt="Gmail Link" class="bottom-right-image">
+    </a>
+
+    <div class="auth-buttons">
+        <button class="login-button">Bejelentkezés</button>
+        <button class="register-button">Regisztráció</button>
+    </div>
+
+    <!-- Bejelentkezés Modal -->
+    <div id="loginModal" class="modal">
+        <div class="modal-content">
+            <span class="close" id="closeLogin">&times;</span>
+            <h2>Bejelentkezés</h2>
+            <form>
+                <label for="username">Felhasználónév:</label>
+                <input type="text" id="username" name="username" required>
+                <br>
+                <label for="password">Jelszó:</label>
+                <input type="password" id="password" name="password" required>
+                <br>
+                <button type="submit" onclick="login()">Bejelentkezés</button>
+            </form>
+        </div>
+    </div>
+
+    <!-- Regisztráció Modal -->
+    <div id="registerModal" class="modal">
+        <div class="modal-content">
+            <span class="close" id="closeRegister">&times;</span>
+            <h2>Regisztráció</h2>
+            <form>
+                <label for="reg-username">Felhasználónév:</label>
+                <input type="text" id="reg-username" name="reg-username" required>
+                <br>
+                <label for="reg-email">Email:</label>
+                <input type="email" id="reg-email" name="reg-email" required>
+                <br>
+                <label for="reg-password">Jelszó:</label>
+                <input type="password" id="reg-password" name="reg-password" required>
+                <br>
+                <button type="submit" onclick="reg()">Regisztráció</button>
+            </form>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
